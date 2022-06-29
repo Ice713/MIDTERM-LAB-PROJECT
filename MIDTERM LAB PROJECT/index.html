@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauranty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section id="banner" class="container-fluid text-white">
+        <nav class="container pt-3">
+            <div class="nav">
+                <div id="title">                        
+                    <div class="logo">
+                        <img class="img-fluid rounded-circle" src="Assets\Banner\logo.png" alt="">
+                    </div>
+                    <h4>Restauranty</h4>
+                </div>               
+                <div class="menu">
+                    <div class="menuBox">
+                        <div class="active">
+                            <h6><a class="" href="#" target="_blank" rel="noopener noreferrer"> Home</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> About</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> Menu</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> Reservation</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> Gallery</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> FAQs</a></h6>
+                        </div>
+                        <div>
+                            <h6><a href="#" target="_blank" rel="noopener noreferrer"> Account</a></h6>
+                        </div>
+                    </div>                                 
+                    <div class="contact-now">
+                        <button class="btn-dark" type="button">CONTACT NOW</button>
+                    </div>  
+                </div>  
+            </div>         
+        </nav> 
+        <div class="banner-message container">
+            <h1 class="display-1">Organic Foods Made Easy & Healthy</h1>
+            <form action="search" class="search">
+                <input type="text" placeholder="Search..">
+                <button class="btn-dark" type="submit"><i class="fa fa-search"></i> Search</button>
+            </form>
+        </div>
+        <div class="we-offer container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="far fa-clock"></i>
+                    <p>24/7 Fresh Food</p>
+                </div>
+                <div class="col-3">
+                    <i class="fab fa-pagelines"></i>
+                    <p>Nature First</p>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-home"></i>
+                    <p>Home Services</p>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-truck"></i>
+                    <p>Free Delivery</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="book container-fluid">  
+        <form class="container">
+            <h3>Book a Table:</h3>
+            <input type="date" class="form-group" name="date" id="date" placeholder="Pick your date">
+            <input type="time" name="time" id="time">
+            <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="Select Peoples (between 1-10)">
+            <button type="submit" class="btn-dark">BOOK NOW</button>
+        </form>
+    </section>
+    <section class="choose-enjoy container">
+        <div class="section-title">
+            <h2>Choose and Enjoy</h2>
+            <h5>Inspire by Recipe and creations of worlds best chefs</h5>
+        </div>
+        <div class="content">
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?t=st=1656512335~exp=1656512935~hmac=44f1e8875066aba18497a173513a04d6565b5dc1460f78f779c04def4b1088c9&w=900" alt="chicken biryani" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Biryani</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;15 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/mutton-lamb-biriyani-with-basmati-rice-served-bowl-moody-background_466689-72652.jpg?t=st=1656517467~exp=1656518067~hmac=21581abafb51bfbff65e5eaaffadd96b4a6c90319bf438e2fdc85d539fa7034e&w=900" alt="mutton biryani" class="img-fluid">                
+                <p>$20.00</p>
+                <h6>Mutton Biryani</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;20 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/overhead-shot-lamb-karahi-baked-little-pan-isolated-white-with-clipping-path_101296-691.jpg?w=900" alt="mutton karahi" class="img-fluid">                
+                <p>$18.00</p>
+                <h6>Mutton Karahi</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Curries <i class="far fa-clock"></i>&nbsp;&nbsp;30 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/afghani-chicken-green-curry-hariyali-tikka-chicken-hara-masala-indian-food-style_1339-165359.jpg?w=900" alt="chicken korma" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Korma</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Curries <i class="far fa-clock"></i>&nbsp;&nbsp;20 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/popular-reddish-chicken-curry-masala-with-prominent-leg-piece-served-bowl_466689-46523.jpg?w=900" alt="chicken nihari" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Nihari</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;30 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?t=st=1656512335~exp=1656512935~hmac=44f1e8875066aba18497a173513a04d6565b5dc1460f78f779c04def4b1088c9&w=900" alt="chicken biryani" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Biryani</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;15 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?t=st=1656512335~exp=1656512935~hmac=44f1e8875066aba18497a173513a04d6565b5dc1460f78f779c04def4b1088c9&w=900" alt="chicken biryani" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Biryani</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;15 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>
+            <div class="content-box">                
+                <img src="https://img.freepik.com/free-photo/indian-chicken-biryani-served-terracotta-bowl-with-yogurt-white-background-selective-focus_466689-72554.jpg?t=st=1656512335~exp=1656512935~hmac=44f1e8875066aba18497a173513a04d6565b5dc1460f78f779c04def4b1088c9&w=900" alt="chicken biryani" class="img-fluid">                
+                <p>$15.00</p>
+                <h6>Chicken Biryani</h6>
+                <small>&nbsp;&nbsp;<i class="fas fa-utensils"></i>&nbsp;&nbsp;Rice <i class="far fa-clock"></i>&nbsp;&nbsp;15 min</small>
+                <button class="btn-dark" type="submit">ORDER NOW</button>
+            </div>            
+        </div>
+        <button type="view-all" class="btn-dark">View all</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

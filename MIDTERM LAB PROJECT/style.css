@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* color palette: 
+Dawn
+#AAA7A2
+
+Rangoon Green
+#181E13
+
+Judge Gray
+#554033
+
+Yellow Metal
+#696336 */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+    background: url(Assets/Banner/background.jpg), #2F6940;
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner a:any-link {
+    color: #fff;
+}
+
+#banner .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .nav .logo {
+    display: flex;
+    height: 10em;
+    background: url(Assets/Banner/logo.png);    
+    color: #000;
+}
+
+#banner .nav #title {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+}
+
+#banner .nav .menu {
+    display: flex;
+    width: 41em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .nav .menu .menuBox {
+    display: flex;
+    width: 32em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner .nav .menu .menuBox div{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #000;
+}
+
+#banner .nav .menu .menuBox div.active {
+    background: #2F6940;
+}
+
+#banner .nav .menu .menuBox,
+#banner .nav .menu .contact-now button {    
+    box-shadow: 7px 5px #000;
+    text-align: center;
+}
+
+#banner .banner-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner .banner-message .display-1 {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    text-align-last: center;
+}
+
+#banner .banner-message form {
+    width: 95%;
+    position: relative;
+}
+#banner .banner-message input[type="text"] {
+    width: 100%;
+    border-radius: 1em;
+}
+
+#banner .banner-message form button {
+    width: 7em;
+    position: absolute;
+    right: 0;
+    box-shadow: 5px 4px #000; 
+    /* background-color: #000;    */
+}
+
+#banner .we-offer {    
+    text-align: center;
+}
+#banner .we-offer i{
+    font-size: 3em;
+    cursor: pointer;
+}
+#banner .we-offer p{
+    font-size: 1.3em;
+    cursor: pointer;    
+}
+
+.section-title {
+    margin: 6em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.section-title h2{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Playfair', serif;
+}
+
+.book {    
+    background: #e0e0de;
+}
+
+.book form {
+    padding: 5em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.book form input{
+    width: 16.5em;
+}
+
+.book form button {
+    box-shadow: 4px 4px #000;
+}
+
+.choose-enjoy{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.choose-enjoy .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.choose-enjoy .content .content-box {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 3em;
+    padding-bottom: 1em;
+}
+
+.choose-enjoy .content .content-box:hover {
+    margin: -5px 0 auto -5px;
+    box-shadow: .5em .5em #000;
+    transition: .3s;
+}
+
+.choose-enjoy .content .content-box p{
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    border: 3px solid #000;
+    padding: .5em;
+    border-radius: 2em;
+    display: block;
+    opacity: 0;
+    box-shadow: 3px 3px #e0e0de;
+    background: #000;
+    color: #fff;
+    transition: .6s;
+}
+
+.choose-enjoy .content .content-box:hover p{
+    opacity: 1;
+}
+
+.choose-enjoy .content .content-box h6, 
+.choose-enjoy .content .content-box small, 
+.choose-enjoy .content .content-box button{
+    margin-left: .5em;
+}
+
+.choose-enjoy .content .content-box h6{
+    margin-top: .5em;
+    font-weight: bolder;
+}
+
+.choose-enjoy .content .content-box button{
+    width: 50%;
+    align-self: center;
+    margin: .5em;
+    box-shadow: 3px 3px #000;
+}
+
+.choose-enjoy button {
+    box-shadow: 3px 3px #000;
+    margin: 4em;
+    width: 13%;
+}
