@@ -19,7 +19,7 @@ Yellow Metal
 }
 
 #banner {
-    background: url(Assets/Banner/background.jpg), #2F6940;
+    background: url(https://img.freepik.com/free-photo/interior-shot-cafe-with-chairs-near-bar-with-wooden-tables_181624-1669.jpg?t=st=1656600098~exp=1656600698~hmac=4226611a191875cfc39061f5b73650acaf2bc3827ee857038b440ce1ae6e671d&w=900), #2F6940;
     height: 100vh;
     background-size: cover;
     background-blend-mode: screen;
@@ -113,7 +113,6 @@ Yellow Metal
     position: absolute;
     right: 0;
     box-shadow: 5px 4px #000; 
-    /* background-color: #000;    */
 }
 
 #banner .we-offer {    
@@ -129,7 +128,7 @@ Yellow Metal
 }
 
 .section-title {
-    margin: 6em 0;
+    margin-bottom: 5em;
     text-align: center;
     width: 100%;
 }
@@ -140,19 +139,22 @@ Yellow Metal
     font-family: 'Playfair', serif;
 }
 
-.book {    
-    background: #e0e0de;
+.book, .special-offer, .customer-reviews, .footer-copyright {    
+    background: #78ffa1;
 }
 
 .book form {
     padding: 5em 0;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start;    
+}
+.book form h3{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .book form input{
-    width: 16.5em;
+    width: 15em;
 }
 
 .book form button {
@@ -216,15 +218,187 @@ Yellow Metal
     font-weight: bolder;
 }
 
+.choose-enjoy .content .content-box small i:last-of-type{
+    margin-left: 1em;
+}
+
 .choose-enjoy .content .content-box button{
     width: 50%;
     align-self: center;
     margin: .5em;
-    box-shadow: 3px 3px #000;
+    box-shadow: 3px 3px #000;    
+}
+
+.choose-enjoy button {
+    text-transform: uppercase!important;
 }
 
 .choose-enjoy button {
     box-shadow: 3px 3px #000;
     margin: 4em;
     width: 13%;
+}
+
+.special-offer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.special-offer .container .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 34%;
+}
+
+.special-offer .container .texts button {
+    box-shadow: 4px 4px #000;
+}
+
+.special-offer .container .image {
+    background: #000;
+    width: 60%;
+    transition: 0.5s;
+}
+
+.special-offer .container .image img:hover{
+    margin: -1em 0 1em -1em;
+    transition: .5s;
+}
+
+.why-choose-us {
+    background: url(https://img.freepik.com/free-photo/group-friends-eating-together_53876-9934.jpg?w=900), #2F6940;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.why-choose-us .content {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.why-choose-us .content .content-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.why-choose-us .content .content-box i{
+    font-size: 4em;
+}
+
+.customer-reviews .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-reviews .content .content-box{    
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #000;
+    width: 26%;
+    padding: 1em;
+    background: #fff;;
+}
+
+
+.customer-reviews .content .content-box:hover{    
+    transition: 0.3s;
+    box-shadow: 5px 5px #000;
+    margin: -1em -1em 1em 0;
+}
+
+.customer-reviews .content .content-box .texts {    
+    margin-left: 1em;
+}
+
+.customer-reviews .content .content-box p{    
+    font-size: .8em;
+}
+
+.customer-reviews .content .content-box .image{    
+    width: 11em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.customer-reviews .content #john-doe .image{    
+    background: url(https://img.freepik.com/free-photo/profile-shot-brutal-man-with-thick-foxy-beard-wears-round-glasses-looks-thoughtfully-aside_273609-17433.jpg?t=st=1656594991~exp=1656595591~hmac=2bd30cc2d2eee98b563dcbfe33ee2f5facc645fe138b33ce74b214c60baca850&w=900);
+    background-size: 9.5em;
+    background-position: 8.5em 0;
+}
+
+
+.customer-reviews .content #john-smith .image{    
+    background: url(https://img.freepik.com/free-photo/dramatic-studio-portrait-redhead-bearded-male-dressed-leather-jacket-dark-grey-vignette-background_613910-219.jpg?t=st=1656594991~exp=1656595591~hmac=d2d35b5f9e94e30034e8c6b72e4e70ba225170242547430d7f5711cf628b4f78&w=900);
+    background-size: 9em;
+    background-position: -3em 0em;
+}
+
+.customer-reviews .content #pamela-john .image{    
+    background: url(https://img.freepik.com/free-photo/beautiful-korean-girl-thinking-imaging-smiling-looking-upper-left-corner-daydreaming-standing-against-blue-background_1258-76018.jpg?t=st=1656594947~exp=1656595547~hmac=c87ca51a72e5fa023cdbbd772a9ad6a88ad54f9d342cd5b76ea106c1b76aa69c&w=900);
+    background-size: 14em;
+    background-position: 9.5em -1em;
+}
+
+.customer-reviews .content i{    
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.footer .row .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .row .col h5{
+    text-decoration: underline;
+}
+
+.footer .row .col small{
+    margin: .3em 0;
+}
+
+.footer .row .col p{
+    font-size: .8em;
+    margin: .5em 0;
+}
+
+.footer .row .col .socials{
+    display: flex;    
+    justify-content: space-between;
+    margin: .7em 0;
+    width: 70%;
+}
+
+.footer .row .col .socials i{
+    font-size: 2.5em;
+}
+
+.footer-copyright .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright .container p{
+    margin: 0;
+}
+.footer-copyright .container .cards{
+    display: flex;
+    justify-content: flex-start;
+    width: 23%;
+}
+
+.footer-copyright .container .cards i{
+    font-size: 1.5em;
+    margin-right: .5em;
 }
